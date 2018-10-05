@@ -1,0 +1,13 @@
+{
+    "name": "sp/nl.sp.civibirthdaymail",
+    "description": "API function for mailing contacts on their birthday",
+    "type": "civicrm-module",
+    "license": "AGPL-3.0",
+    "authors": [
+        {
+            "name": "Robin de Rooij",
+            "email": "rdrooij@sp.nl"
+        }
+    ],
+    "require": {}
+}
