@@ -1,8 +1,6 @@
 * Civi Birthday
 
-This CiviCRM extension sends an email to ROOD members who turned 16, to attend them to the fact
-that they can now be SP members too.
-
+This CiviCRM extension sends an email to contacts on their birthday.
 
 Sends a birthday mail to members that turned a specific age the day the script runs.
 
@@ -15,10 +13,6 @@ Sends a birthday mail to members that turned a specific age the day the script r
 
 1. Don't forget to install the CiviCRM Mail API Fork: https://github.com/SPnl/org.civicoop.emailapi
 2. Install the extension
-3. Add the API method: Contact.Sendroodbirthdaymail as a daily task.
+3. Add the API method: Contact.Sendbirthdaymail as a daily task and fill in the correct arguments.
 
 BE SURE TO RUN THIS AS DAILY TASK AND NOT HOURLY. Otherwise contacts will get multiple mails a day on their birthday.
-
-** Todo
-
-- Installing when CiviRules is not installed gives a DB error, this should be a conditional check
