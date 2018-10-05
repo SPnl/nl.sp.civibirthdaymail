@@ -55,7 +55,6 @@ function _civicrm_api3_contact_Sendbirthdaymail($contactIds, $templateId) {
  * @throws API_Exception
  */
 function civicrm_api3_contact_Sendbirthdaymail($params) {
-    // TODO: Find exact permission for message template creation
     if (!CRM_Core_Permission::check("access CiviCRM")) {
         throw new API_Exception("Insufficient permissions");
     }
