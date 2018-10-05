@@ -1,6 +1,6 @@
 <?php
 
-require_once 'civicrmroodbirthday.civix.php';
+require_once 'civibirthdaymail.civix.php';
 
 /**
  * Implementation of hook_civicrm_alterAPIPermissions.
@@ -14,7 +14,7 @@ require_once 'civicrmroodbirthday.civix.php';
  *
  * @link https://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_alterAPIPermissions
  */
-function civicrmroodbirthday_civicrm_alterAPIPermissions($entity, $action, &$params, &$permissions) {
+function civibirthdaymail_civicrm_alterAPIPermissions($entity, $action, &$params, &$permissions) {
 }
 
 /**
@@ -22,8 +22,8 @@ function civicrmroodbirthday_civicrm_alterAPIPermissions($entity, $action, &$par
  *
  * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_config
  */
-function civicrmroodbirthday_civicrm_config(&$config) {
-  _civicrmroodbirthday_civix_civicrm_config($config);
+function civibirthdaymail_civicrm_config(&$config) {
+  _civibirthdaymail_civix_civicrm_config($config);
 }
 
 /**
@@ -31,8 +31,8 @@ function civicrmroodbirthday_civicrm_config(&$config) {
  *
  * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_xmlMenu
  */
-function civicrmroodbirthday_civicrm_xmlMenu(&$files) {
-  _civicrmroodbirthday_civix_civicrm_xmlMenu($files);
+function civibirthdaymail_civicrm_xmlMenu(&$files) {
+  _civibirthdaymail_civix_civicrm_xmlMenu($files);
 }
 
 /**
@@ -40,8 +40,8 @@ function civicrmroodbirthday_civicrm_xmlMenu(&$files) {
  *
  * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_install
  */
-function civicrmroodbirthday_civicrm_install() {
-  _civicrmroodbirthday_civix_civicrm_install();
+function civibirthdaymail_civicrm_install() {
+  _civibirthdaymail_civix_civicrm_install();
 }
 
 /**
@@ -49,8 +49,8 @@ function civicrmroodbirthday_civicrm_install() {
  *
  * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_postInstall
  */
-function civicrmroodbirthday_civicrm_postInstall() {
-  _civicrmroodbirthday_civix_civicrm_postInstall();
+function civibirthdaymail_civicrm_postInstall() {
+  _civibirthdaymail_civix_civicrm_postInstall();
 }
 
 /**
@@ -58,8 +58,8 @@ function civicrmroodbirthday_civicrm_postInstall() {
  *
  * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_uninstall
  */
-function civicrmroodbirthday_civicrm_uninstall() {
-  _civicrmroodbirthday_civix_civicrm_uninstall();
+function civibirthdaymail_civicrm_uninstall() {
+  _civibirthdaymail_civix_civicrm_uninstall();
 }
 
 /**
@@ -67,8 +67,8 @@ function civicrmroodbirthday_civicrm_uninstall() {
  *
  * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_enable
  */
-function civicrmroodbirthday_civicrm_enable() {
-  _civicrmroodbirthday_civix_civicrm_enable();
+function civibirthdaymail_civicrm_enable() {
+  _civibirthdaymail_civix_civicrm_enable();
 }
 
 /**
@@ -76,8 +76,8 @@ function civicrmroodbirthday_civicrm_enable() {
  *
  * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_disable
  */
-function civicrmroodbirthday_civicrm_disable() {
-  _civicrmroodbirthday_civix_civicrm_disable();
+function civibirthdaymail_civicrm_disable() {
+  _civibirthdaymail_civix_civicrm_disable();
 }
 
 /**
@@ -85,8 +85,8 @@ function civicrmroodbirthday_civicrm_disable() {
  *
  * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_upgrade
  */
-function civicrmroodbirthday_civicrm_upgrade($op, CRM_Queue_Queue $queue = NULL) {
-  return _civicrmroodbirthday_civix_civicrm_upgrade($op, $queue);
+function civibirthdaymail_civicrm_upgrade($op, CRM_Queue_Queue $queue = NULL) {
+  return _civibirthdaymail_civix_civicrm_upgrade($op, $queue);
 }
 
 /**
@@ -97,8 +97,8 @@ function civicrmroodbirthday_civicrm_upgrade($op, CRM_Queue_Queue $queue = NULL)
  *
  * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_managed
  */
-function civicrmroodbirthday_civicrm_managed(&$entities) {
-  _civicrmroodbirthday_civix_civicrm_managed($entities);
+function civibirthdaymail_civicrm_managed(&$entities) {
+  _civibirthdaymail_civix_civicrm_managed($entities);
 }
 
 /**
@@ -110,8 +110,8 @@ function civicrmroodbirthday_civicrm_managed(&$entities) {
  *
  * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_caseTypes
  */
-function civicrmroodbirthday_civicrm_caseTypes(&$caseTypes) {
-  _civicrmroodbirthday_civix_civicrm_caseTypes($caseTypes);
+function civibirthdaymail_civicrm_caseTypes(&$caseTypes) {
+  _civibirthdaymail_civix_civicrm_caseTypes($caseTypes);
 }
 
 /**
@@ -124,8 +124,8 @@ function civicrmroodbirthday_civicrm_caseTypes(&$caseTypes) {
  *
  * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_angularModules
  */
-function civicrmroodbirthday_civicrm_angularModules(&$angularModules) {
-  _civicrmroodbirthday_civix_civicrm_angularModules($angularModules);
+function civibirthdaymail_civicrm_angularModules(&$angularModules) {
+  _civibirthdaymail_civix_civicrm_angularModules($angularModules);
 }
 
 /**
@@ -133,8 +133,8 @@ function civicrmroodbirthday_civicrm_angularModules(&$angularModules) {
  *
  * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_alterSettingsFolders
  */
-function civicrmroodbirthday_civicrm_alterSettingsFolders(&$metaDataFolders = NULL) {
-  _civicrmroodbirthday_civix_civicrm_alterSettingsFolders($metaDataFolders);
+function civibirthdaymail_civicrm_alterSettingsFolders(&$metaDataFolders = NULL) {
+  _civibirthdaymail_civix_civicrm_alterSettingsFolders($metaDataFolders);
 }
 
 // --- Functions below this ship commented out. Uncomment as required. ---
@@ -144,7 +144,7 @@ function civicrmroodbirthday_civicrm_alterSettingsFolders(&$metaDataFolders = NU
  *
  * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_preProcess
  *
-function civicrmroodbirthday_civicrm_preProcess($formName, &$form) {
+function civibirthdaymail_civicrm_preProcess($formName, &$form) {
 
 } // */
 
@@ -153,14 +153,14 @@ function civicrmroodbirthday_civicrm_preProcess($formName, &$form) {
  *
  * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_navigationMenu
  *
-function civicrmroodbirthday_civicrm_navigationMenu(&$menu) {
-  _civicrmroodbirthday_civix_insert_navigation_menu($menu, NULL, array(
-    'label' => ts('The Page', array('domain' => 'nl.sp.civicrmroodbirthday')),
+function civibirthdaymail_civicrm_navigationMenu(&$menu) {
+  _civibirthdaymail_civix_insert_navigation_menu($menu, NULL, array(
+    'label' => ts('The Page', array('domain' => 'nl.sp.civibirthdaymail')),
     'name' => 'the_page',
     'url' => 'civicrm/the-page',
     'permission' => 'access CiviReport,access CiviContribute',
     'operator' => 'OR',
     'separator' => 0,
   ));
-  _civicrmroodbirthday_civix_navigationMenu($menu);
+  _civibirthdaymail_civix_navigationMenu($menu);
 } // */

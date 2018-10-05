@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
-<extension key="nl.sp.civicrmroodbirthday" type="module">
-  <file>civicrmroodbirthday</file>
-  <name>CiviCRM ROOD Birthday mail</name>
-  <description>Extension to send ROOD members a mail when they reach the age of 16</description>
+<extension key="nl.sp.civibirthdaymail" type="module">
+  <file>civibirthdaymail</file>
+  <name>CiviCRM Birthday mail</name>
+  <description>Extension to send members a mail when they reach a certain age or always send</description>
   <license>AGPL-3.0</license>
   <maintainer>
     <author>Robin de Rooij</author>
@@ -22,6 +22,6 @@
   </compatibility>
   <comments></comments>
   <civix>
-    <namespace>CRM/Rood</namespace>
+    <namespace>CRM/Mail</namespace>
   </civix>
 </extension>

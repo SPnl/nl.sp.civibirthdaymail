@@ -1,10 +1,10 @@
-* ROOD Civi Birthday
+* Civi Birthday
 
 This CiviCRM extension sends an email to ROOD members who turned 16, to attend them to the fact
 that they can now be SP members too.
 
 
-Sends a birthday mail to ROOD members that turned 16 the day the script runs.
+Sends a birthday mail to members that turned a specific age the day the script runs.
 
 ** Requirements
 
@@ -22,4 +22,3 @@ BE SURE TO RUN THIS AS DAILY TASK AND NOT HOURLY. Otherwise contacts will get mu
 ** Todo
 
 - Installing when CiviRules is not installed gives a DB error, this should be a conditional check
-- There is currently no easy ROOD -> ROOD and SP membership link
