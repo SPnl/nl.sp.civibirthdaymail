@@ -24,7 +24,7 @@ The API has the following parameters:
 | Paramater                    | Description                                                |
 |------------------------------+------------------------------------------------------------|
 | email_template_id (required) | ID of the email template for sending the mail              |
-| age                          | Only send contacts mail with this ages                     |
-| skip_age                     | Skip contacts with a certain ages                          |
+| age                          | Only send contacts mail with this age                      |
+| skip_age                     | Skip contacts with a certain age                           |
 | membership_id                | Only send contacts a mail with the following membership id |
 
