@@ -9,8 +9,15 @@ Sends a birthday mail to ROOD members that turned 16 the day the script runs.
 ** Requirements
 
 - CiviCRM Mail API (Robin's fork, because he fixed a token related bug): https://github.com/SPnl/org.civicoop.emailapi
-- Just clone it in the CiviCRM extensions directory
 - Tested on CiviCRM 4.6
+
+** Installing
+
+1. Don't forget to install the CiviCRM Mail API Fork: https://github.com/SPnl/org.civicoop.emailapi
+2. Install the extension
+3. Add the API method: Contact.Sendroodbirthdaymail as a daily task.
+
+BE SURE TO RUN THIS AS DAILY TASK AND NOT HOURLY. Otherwise contacts will get multiple mails a day on their birthday.
 
 ** Todo
 
