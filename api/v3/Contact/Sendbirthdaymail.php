@@ -47,7 +47,7 @@ function _civicrm_api3_contact_Sendbirthdaymail($contactIds, $templateId) {
 /**
  * Contact.Sendbirthdaymail API
  *
- * Sends a mail to all ROOD members on their x-th birthday
+ * Sends a mail to all certain contacts on their x-th birthday
  * @param array $params
  * @return array API result descriptor
  * @see civicrm_api3_create_success
