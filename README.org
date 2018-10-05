@@ -16,3 +16,15 @@ Sends a birthday mail to members that turned a specific age the day the script r
 3. Add the API method: Contact.Sendbirthdaymail as a daily task and fill in the correct arguments.
 
 BE SURE TO RUN THIS AS DAILY TASK AND NOT HOURLY. Otherwise contacts will get multiple mails a day on their birthday.
+
+** Usage
+
+The API has the following parameters:
+
+| Paramater                    | Description                                                |
+|------------------------------+------------------------------------------------------------|
+| email_template_id (required) | ID of the email template for sending the mail              |
+| age                          | Only send contacts mail with this ages                     |
+| skip_age                     | Skip contacts with a certain ages                          |
+| membership_id                | Only send contacts a mail with the following membership id |
+
