@@ -9,7 +9,7 @@
  */
 function _civicrm_api3_contact_Sendbirthdaymail_spec(&$spec) {
     $spec['email_template_id'] = [
-        'api.required' => 1,
+        'api.required' => 0,
         'name' => 'email_template_id',
         'title' => 'Email template ID to send',
     ];
@@ -27,6 +27,11 @@ function _civicrm_api3_contact_Sendbirthdaymail_spec(&$spec) {
         'api.required' => 0,
         'name' => 'membership_id',
         'title' => 'Send only to members with this membership'
+    ];
+    $spec['dont_send_mail'] = [
+        'api.required' => 0,
+        'name' => 'dont_send_mail',
+        'title' => 'Only fetch contact IDs. Useful if this API is used outside of this extension'
     ];
 }
 
@@ -97,7 +102,11 @@ function civicrm_api3_contact_Sendbirthdaymail($params) {
         return civicrm_api3_create_success([], [], 'Contact', 'Sendbirthdaymail');
     }
     $contactIds = array_map(function($contact) { return $contact['id']; }, $result);
-    _civicrm_api3_contact_Sendbirthdaymail($contactIds, $params['email_template_id']);
+    // Skip emailing when dont send mail is set
+    if (!isset($params['dont_send_mail']) || (isset($params['dont_send_mail'])
+                                              && $params['dont_send_mail'] == false)) {
+        _civicrm_api3_contact_Sendbirthdaymail($contactIds, $params['email_template_id']);
+    }
     return civicrm_api3_create_success($contactIds,
                                        $params, 'Contact', 'Sendbirthdaymail');
 }
