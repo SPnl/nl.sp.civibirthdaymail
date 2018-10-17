@@ -97,7 +97,6 @@ function civicrm_api3_contact_Sendbirthdaymail($params) {
         return civicrm_api3_create_success([], [], 'Contact', 'Sendbirthdaymail');
     }
     $contactIds = array_map(function($contact) { return $contact['id']; }, $result);
-    print_r($contactIds);
     _civicrm_api3_contact_Sendbirthdaymail($contactIds, $params['email_template_id']);
     return civicrm_api3_create_success($contactIds,
                                        $params, 'Contact', 'Sendbirthdaymail');
